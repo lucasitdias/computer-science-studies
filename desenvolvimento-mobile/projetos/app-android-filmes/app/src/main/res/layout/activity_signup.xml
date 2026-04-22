@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Tela cadastro -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <!-- Logo aplicativo -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Título cadastro -->
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Campo nome -->
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:background="@drawable/edit_text_box"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo email -->
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_text_box"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo senha -->
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:background="@drawable/edit_text_box"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botão cadastrar -->
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_button"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

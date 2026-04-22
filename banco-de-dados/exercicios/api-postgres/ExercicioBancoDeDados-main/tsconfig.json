@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Suporte moderno de JavaScript
+    "module": "Node16", // Compatível com import/export no Node.js
+    "moduleResolution": "Node16", // Resolve módulos como o Node faz
+    "outDir": "./dist", // Pasta de saída para arquivos compilados
+    "esModuleInterop": true, // Permite importar pacotes CommonJS com 'import'
+    "forceConsistentCasingInFileNames": true, // Evita erros em sistemas com case-sensitive
+    "strict": true, // Ativa todas as verificações de tipo
+    "skipLibCheck": true, // Ignora verificação de tipos em dependências
+    "resolveJsonModule": true, // Permite importar arquivos JSON
+    "typeRoots": ["./node_modules/@types"] // Diretório onde os tipos estão instalados
+  }
+}

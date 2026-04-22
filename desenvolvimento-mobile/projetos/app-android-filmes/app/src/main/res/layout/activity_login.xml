@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Tela login app -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="24dp"
+    tools:ignore="ExtraText">
+
+    <!-- Logo aplicativo -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nome app -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Container formulário login -->
+    <LinearLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Campo email -->
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo senha -->
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Checkbox lembrar me -->
+        <CheckBox
+            android:id="@+id/remember_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:textColor="@color/gray"
+            android:gravity="start"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Botão login -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Link ajuda -->
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_text"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Link cadastro -->
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_prompt"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Aviso recaptcha -->
+    <TextView
+        android:id="@+id/recaptcha_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recaptcha_notice"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+# Ignorar binários e objetos
+*.exe
+*.obj
+*.o
+*.ilk
+*.pdb
+*.log
+
+# Ignorar pastas de build
+/build/
+/BaralhoPilha.dir/
+
+# Ignorar arquivos temporários do VSCode
+.vscode/

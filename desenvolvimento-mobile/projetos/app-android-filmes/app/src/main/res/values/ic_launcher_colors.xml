@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Cor ícone -->
+
+<resources>
+
+    <!-- Fundo ícone -->
+    <color name="ic_launcher_background">#000000</color>
+
+</resources>

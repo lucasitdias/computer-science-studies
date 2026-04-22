@@ -1,0 +1,74 @@
+/* Fundo geral da página: verde pano */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #006400; /* verde escuro estilo mesa */
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título */
+h1 {
+  margin-top: 20px;
+}
+
+/* Botões do menu */
+.menu button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Área das cartas */
+#saida {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Mostrar só uma carta → centralizada */
+#saida.single {
+  display: flex;
+  flex-direction: column; /* Texto fique acima da carta */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quando mostrar o monte - grid */
+#saida.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+/* Estilo visual das cartas */
+.carta {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Cartas padrão sem borda arredondada nem sombra */
+.carta img {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+/* Carta escolhida quando compra */
+.carta.escolhida img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Efeito de zoom ao passar o mouse */
+.carta img:hover {
+  transform: scale(1.1);
+}
+
+/* Mensagens acima da carta */
+#saida p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: white;
+}

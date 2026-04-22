@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Backup config -->
+<!-- Regras de backup automático -->
+<full-backup-content>
+
+    <!-- Incluir preferências -->
+    <!-- <include domain="sharedpref" path="."/> -->
+
+    <!-- Excluir arquivo específico -->
+    <!-- <exclude domain="sharedpref" path="device.xml"/> -->
+
+</full-backup-content>
